@@ -1,5 +1,39 @@
-# Vue 3 + TypeScript + Vite
+# 🐎 Horse Race Simulator
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Bu proje, Vue 3 + Vuex + TypeScript kullanılarak geliştirilmiş dinamik bir **at yarışı simülasyonu**dur. 20 farklı at rastgele olarak oluşturulur, yarış programı planlanır ve her yarışta 10 at koşarak kazananlar belirlenir. Yarışlar animasyonlu olarak pistte gösterilir.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Özellikler
+
+- 20 farklı at rastgele isim, kondisyon ve renklerle oluşturulur.
+- Her yarışta rastgele 10 at seçilir.
+- Farklı mesafelerde yarışlar planlanır (1200m, 1400m, 1600m...).
+- Gerçek zamanlı yarış animasyonu.
+- Her turun sonunda sonuç tablosu.
+- Yarış programı ve geçmiş yarışların kazananları gösterilir.
+- Tamamen **Vuex** tabanlı state yönetimi.
+- **TypeScript** ile tip güvenliği.
+
+## 🖼️ Ekran Görüntüleri
+
+### 🎯 Yarış Pisti
+![Track](./assets/screenshots/track.png)
+
+### 🐎 At Listesi
+![Horse List](./assets/screenshots/horses.png)
+
+### 📋 Yarış Programı
+![Schedule](./assets/screenshots/schedule.png)
+
+### 🏆 Sonuçlar
+![Results](./assets/screenshots/results.png)
+
+## 🧪 Testler
+
+Proje, `Vitest` ile test edilmektedir.
+
+### Test Çalıştırmak için:
+
+```bash
+npm install
+npm run dev
+npm test
